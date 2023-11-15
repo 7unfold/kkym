@@ -4,45 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
-    </script>
-    <script src="main.js">
-    </script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
-    
-    <title>Feliz aniversário, Kim</title>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Spotify Web</title>
 </head>
 
 <body>
-    <div class="ui placeholder segment">
-        <div class="ui two column stackable center aligned grid">
-            <div class="middle aligned row">
-                <div class="ui vertical divider">Ou</div>
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="search icon"></i>
-                        Encontrar País
-                    </div>
-                    <div class="field">
-                        <div class="ui search">
-                            <div class="ui icon input">
-                                <input type="text" class="prompt" placeholder="Pesquisar...">
-                                <i class="search icon"></i>
-                            </div>
-                            <div class="results"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="world icon"></i>
-                        Adicionar Novo País
-                    </div>
-                    <a href="" class="ui primary button">Criar</a>
-                </div>
-            </div>
-        </div>
+    <div class="top-bar">
+        <span class="title">
+            Feliz aniversário!
+        </span>
+        <img src="Icons/settings.svg" alt="" class="top-bar-icon">
+    </div>
+    <div class="container">
+        <ul class="selector">
+            <li class="selectable selected item">
+                <button>
+                    <span>Letras</span>
+                </button>
+            </li>
+            <li class="selectable item">
+                <button>
+                    <span>Textos</span>
+                </button>
+            </li>
+            <li class="selectable item">
+                <button>
+                    <span></span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="container" id="playlists-container">
+        <ul class="playlists" id="letras">
+            <li class="item">
+                <a href="">
+                    <img src="Photos/kim.png" alt="">
+                    <img class="play-button" src="Icons/play.svg" alt="">
+                    <span class="playlist-name">
+                        Sobre você
+                    </span>
+                    <span class="desc">
+                        Descubra as letras que te descrevem
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <img src="Photos/indie.jpeg" alt="">
+                    <span class="playlist-name">
+                        Sobre sua vibe
+                    </span>
+                    <span class="desc">
+                        Descubra as letras que descrevem sua vibe
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <img src="Photos/mystery.png" alt="">
+                    <span class="playlist-name">
+                        Sobre nós
+                    </span>
+                    <span class="desc">
+                        Descubra letras sobre nós
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="playlists" id="textos">
+            <li class="item">
+                <a href="">
+                    <img src="Photos/kim.png" alt="">
+                    <span class="playlist-name">
+                        Sobre 
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <img src="Photos/indie.jpeg" alt="">
+                    <span class="playlist-name">
+                        e
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <img src="Photos/mystery.png" alt="">
+                    <span class="playlist-name">
+                        f
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="playlists" id="ipsum">
+            <li class="item">
+                <a href="">
+                    <img src="Photos/kim.png" alt="">
+                    <span class="playlist-name">
+                        g
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <img src="Photos/indie.jpeg" alt="">
+                    <span class="playlist-name">
+                        h
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="">
+                    <img src="Photos/mystery.png" alt="">
+                    <span class="playlist-name">
+                        i
+                    </span>
+                </a>
+            </li>
+        </ul>
     </div>
 </body>
